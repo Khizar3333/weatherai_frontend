@@ -11,7 +11,7 @@ const Weather = () => {
         setMessages((prev) => [...prev, { text: input, sender: 'user' }]);
         
         try {
-            const response = await fetch('https://agent-tutorial.vercel.app/', {
+            const response = await fetch('https://agent-tutorial.vercel.app/get_weather', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
